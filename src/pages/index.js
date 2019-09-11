@@ -8,6 +8,8 @@ import Issues from '../components/issues'
 import PressReleases from '../components/press-releases'
 import Contact from '../components/contact'
 
+import mystyles from '../styles/index.scss'
+
 const IndexPage = () => (
   <Layout>
     <SEO title="" />
