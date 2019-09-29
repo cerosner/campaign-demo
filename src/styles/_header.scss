@@ -6,6 +6,7 @@ header {
   border-radius: 25px;
   width: 80%;
   margin: 2rem;
+  box-shadow: 10px 5px 1rem black;
 }
 #sub-header {
   @include flex-display(row, space-around, center);
@@ -22,7 +23,6 @@ header {
   flex-wrap: wrap;
 }
 #social-media {
-  @include test-border(red);
   @include flex-display(row, space-around, start);
 }
 .icon-header {

@@ -1,12 +1,16 @@
 #container {
  @include flex-display(column, center, start);
- width: 80%;
+ width: 70%;
 }
 .block {
   margin: 1rem;
   background-color: rgb(0, 0, 90);
   border-radius: 25px;
   padding: 1.5rem;
+  box-shadow: 10px 5px 1rem black;
+}
+#issues {
+  text-align: right;
 }
 #register {
   @include flex-display(row, space-around, start);
