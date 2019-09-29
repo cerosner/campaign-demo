@@ -1,0 +1,35 @@
+$primary: rgb(0, 0, 139);
+$secondary: rgb(0, 0, 90);
+$tertiary:  rgb(128, 128, 128);
+$font-color: rgb(198, 198, 198);
+$font-family: sans-serif;
+$font-size: 16px;
+
+@mixin font-styles($color, $size) {
+  color: $color;
+  font-size: $size;
+}
+@mixin dimensions($h, $w) {
+  height: $h;
+  width: $w;
+}
+@mixin flex-display($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin test-border($color) {
+  border: 1px solid $color;
+}
+
+// %input-label {
+//   @include font-styles(black, $font-size);
+//   font-weight: bold;
+//   background: $primary;
+//   letter-spacing: .15rem;
+//   padding: .15rem;
+//   position: absolute;
+//   z-index: 5;
+//   visibility: hidden;
+// }

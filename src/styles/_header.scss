@@ -1,0 +1,30 @@
+header {
+  @include flex-display(column, start, center);
+  padding: 1rem;
+  text-align: center;
+  background-color: $secondary;
+  border-radius: 25px;
+  width: 80%;
+  margin: 2rem;
+}
+#sub-header {
+  @include flex-display(row, space-around, center);
+  margin: 1rem;
+  padding: 1.5rem;
+  width: 80%;
+}
+#img-header {
+  box-shadow: 20px 20px 50px rgb(0, 0, 0);
+}
+#sub-header p {
+  width: 50%;
+  padding-left: 2rem;
+  flex-wrap: wrap;
+}
+#social-media {
+  @include test-border(red);
+  @include flex-display(row, space-around, start);
+}
+.icon-header {
+  width: 60px;
+}

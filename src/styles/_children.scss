@@ -1,0 +1,37 @@
+#container {
+ @include flex-display(column, center, start);
+ width: 80%;
+}
+.block {
+  margin: 1rem;
+  background-color: rgb(0, 0, 90);
+  border-radius: 25px;
+  padding: 1.5rem;
+}
+#register {
+  @include flex-display(row, space-around, start);
+  width: 80%;
+}
+.panel-register {
+  // @include test-border(red);
+  @include flex-display(column, start, center);
+  width: 50%;
+  margin: 1rem;
+}
+#img-register {
+  width: 200px;
+  transform: rotate(-20deg);
+}
+#list-register {
+  @include flex-display(column, start, start);
+  color: white;
+  list-style: circle;
+}
+#press {
+  width: 80%;
+  margin: 1rem;
+}
+#list-press {
+  list-style: circle;
+  font-size: 1rem;
+}

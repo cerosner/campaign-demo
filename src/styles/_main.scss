@@ -1,0 +1,53 @@
+body {
+  @include font-styles($font-color, $font-size);
+  font-family: $font-family;
+  background: $primary;
+  padding: 2rem;
+}
+main {
+  @include flex-display(column, center, center);
+}
+h1, h2, h3, a {
+  font-weight: bold;
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  @include font-styles(rgb(92, 190, 255), 1.25rem);
+  margin-bottom: 1rem;
+}
+h6 {
+  font-size: .75rem;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+li {
+  line-height: 1rem;
+}
+hr {
+  width: 80%;
+}
+#index {
+  @include flex-display(column, start, center);
+}
+footer {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  color: $tertiary;
+  font-style: italic;
+}

@@ -1,15 +1,15 @@
 import React from 'react'
 
 const Socials = () => (
-  <div>
+  <div id="social-media">
     <a href="/">
-      <img src="/" alt="Facebook" />
+      <img src="/" class="icon-header" alt="Facebook" />
     </a>
     <a href="/">
-      <img src="/" alt="Instagram" />
+      <img src="/" class="icon-header" alt="Instagram" />
     </a>
     <a href="/">
-      <img src="/" alt="Twitter" />
+      <img src="/" class="icon-header" alt="Twitter" />
     </a>
   </div>
 )
