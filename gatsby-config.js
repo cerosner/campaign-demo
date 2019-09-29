@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Frank Rosner - Candidate for Sixth Ward Council`,
+    title: `Frank Rosner - Candidate for Hoboken's 6th Ward City Council`,
     description: `Official campaign website for candidate Frank Rosner, running for the Sixth Ward council seat of Hoboken, New Jersey`,
     author: `Cassie Rosner`
   },
