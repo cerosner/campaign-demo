@@ -1,29 +1,26 @@
 import React from 'react'
-import useForm from 'react-hook-form'
 
-const Contact = () => {
-  const { register, handleSubmit, watch, errors } = useForm()
-  const onSubmit = data => { console.log(data) }
-
-  console.log(watch('example')) // watch input value by passing the name of it
-
-  return (
-    <div class="block">
-      <h3>Contact</h3>
-    {/* "handleSubmit" will validate your inputs before invoking "onSubmit" */}
-    <form onSubmit={handleSubmit(onSubmit)}>
-    {/* register your input into the hook by invoking the "register" function */}
-      <input name="example" defaultValue="test" ref={register} />
-
-      {/* include validation with required or other standard HTML validation rules */}
-      <input name="exampleRequired" ref={register({ required: true })} />
-      {/* errors will return when field validation fails  */}
-      {errors.exampleRequired && <span>This field is required</span>}
-
-      <input type="submit" />
+const Contact = () => (
+  <div className="block">
+    <h3>Contact</h3>
+    <h6>
+      Please feel free to ask questions or voice any of your concerns.
+    </h6>
+      <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label>Name: <input type="text" name="name" required /></label>
+      </p>
+      <p>
+        <label>Email (optional): <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
     </form>
-    </div>
-  )
-}
+  </div>
+)
 
 export default Contact
