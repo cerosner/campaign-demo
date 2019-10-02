@@ -1,8 +1,8 @@
 body {
   @include font-styles($font-color, $font-size);
   font-family: $font-family;
-  background: $primary;
   padding: 2rem;
+  background: $primary;
 }
 main {
   @include flex-display(column, center, center);
@@ -20,6 +20,11 @@ h2 {
 h3 {
   @include font-styles(rgb(92, 190, 255), 1.25rem);
   margin-bottom: 1rem;
+}
+h5 {
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: .25rem;
 }
 h6 {
   font-size: .75rem;

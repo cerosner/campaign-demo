@@ -23,7 +23,13 @@ header {
   flex-wrap: wrap;
 }
 #social-media {
+  @include flex-display(column, center, center);
+  width: 60%;
+}
+#social-links {
   @include flex-display(row, space-around, start);
+  padding-top: 1rem;
+  width: 80%;
 }
 .icon-header {
   width: 60px;
