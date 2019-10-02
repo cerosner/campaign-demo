@@ -7,6 +7,7 @@ import  instagram from '../images/instagram-logo.png'
 const Socials = () => (
   <div id="social-media">
     <h5>Connect with me!</h5>
+    <hr />
     <div id="social-links">
     <a href="https://www.facebook.com/FMROZforHoboken6thWard/" target="_blank">
       <img src={facebook} className="icon-header" alt="Facebook" /><br />
