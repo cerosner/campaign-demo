@@ -44,17 +44,33 @@ a {
   }
 }
 li {
-  line-height: 1rem;
+  line-height: 1.5rem;
 }
 hr {
   width: 80%;
 }
+strong {
+  color: white;
+  font-size: .8rem;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+span {
+  font-weight: bold;
+}
 #index {
   @include flex-display(column, start, center);
 }
+#quote {
+  @include flex-display(row, center, center);
+  margin: 5rem 0;
+  font-style: italic;
+  text-align: right;
+}
 footer {
-  margin-top: 2rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   color: $tertiary;
   font-style: italic;
 }

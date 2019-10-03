@@ -11,15 +11,15 @@ const Socials = () => (
     <div id="social-links">
     <a href="https://www.facebook.com/FMROZforHoboken6thWard/" target="_blank">
       <img src={facebook} className="icon-header" alt="Facebook" /><br />
-      <strong>Facebook</strong>
+      <span>Facebook</span>
     </a>
     <a href="https://www.instagram.com/fmrosner/" target="_blank">
       <img src={instagram} className="icon-header" alt="Instagram" /><br />
-      <strong>Instagram</strong>
+      <span>Instagram</span>
     </a>
     <a href="https://twitter.com/rozone1" target="_blank">
       <img src={twitter} className="icon-header" alt="Twitter" /><br />
-      <strong>Twitter</strong>
+      <span>Twitter</span>
     </a>
     </div>
   </div>
