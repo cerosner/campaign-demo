@@ -63,12 +63,12 @@ span {
 #index {
   @include flex-display(column, start, center);
 }
-#quote {
-  @include flex-display(row, center, center);
-  margin: 5rem 0;
-  font-style: italic;
-  text-align: right;
-}
+// #quote {
+//   @include flex-display(row, center, center);
+//   margin: 5rem 1rem;
+//   font-style: italic;
+//   text-align: right;
+// }
 footer {
   padding-top: 1rem;
   color: $tertiary;
