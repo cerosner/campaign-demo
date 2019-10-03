@@ -2,6 +2,12 @@
   body {
     padding: 0;
   }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
   footer {
     padding: 1rem;
   }
@@ -10,14 +16,27 @@
   }
   #sub-header {
     flex-direction: column;
+    padding: 1rem;
   }
   #img-header {
     margin-bottom: 3rem;
   }
   #sub-header p {
+    padding: 0;
     width: 100%;
+  }
+  #social-media {
+    width: 100%;
+    margin-left: 0;
   }
   #container {
     width: 90%;
+  }
+  #register {
+    @include flex-display(column, center, center);
+    width: 100%;
+  }
+  .panel-register {
+    width: 80%;
   }
 }
