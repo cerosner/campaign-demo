@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Cabin:700|Kanit:500&display=swap');
+
 $primary: rgb(0, 0, 139);
 $secondary: rgb(0, 0, 90);
 $tertiary:  rgb(128, 128, 128);
 $font-color: rgb(198, 198, 198);
-$font-family: sans-serif;
+$font-family:  'Cabin', sans-serif;
 $font-size: 16px;
 
 @mixin font-styles($color, $size) {
