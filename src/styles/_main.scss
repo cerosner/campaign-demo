@@ -1,3 +1,6 @@
+::-webkit-scrollbar {
+  display: none;
+}
 body {
   @include font-styles($font-color, $font-size);
   font-family: $font-family;
@@ -71,6 +74,7 @@ span {
 //   text-align: right;
 // }
 footer {
+  font-size: .5rem;
   padding-top: 1rem;
   color: $tertiary;
   font-style: italic;
