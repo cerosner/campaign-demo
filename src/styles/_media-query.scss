@@ -1,0 +1,23 @@
+@media all and (max-width: 650px)  {
+  body {
+    padding: 0;
+  }
+  footer {
+    padding: 1rem;
+  }
+  header {
+    margin: 1rem;
+  }
+  #sub-header {
+    flex-direction: column;
+  }
+  #img-header {
+    margin-bottom: 3rem;
+  }
+  #sub-header p {
+    width: 100%;
+  }
+  #container {
+    width: 90%;
+  }
+}
