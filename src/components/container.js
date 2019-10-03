@@ -6,7 +6,7 @@ import Issues from './issues'
 const Container = () => (
   <div id="container">
     <AboutMe />
-    <Issues />
+    {/* <Issues /> */}
   </div>
 )
 
