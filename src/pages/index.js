@@ -19,6 +19,11 @@ const IndexPage = () => (
       <hr />
       <PressReleases />
       <Contact />
+      <div id="quote">
+      <h1>
+        "Lorem ipsum dolor sit amet" - quote
+      </h1>
+      </div>
     </Layout>
   </div>
 )
