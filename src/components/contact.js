@@ -6,7 +6,8 @@ const Contact = () => (
     <h6>
       Please feel free to ask questions or voice any of your concerns.
     </h6>
-      <form name="contact" method="POST" data-netlify="true">
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="contact" value="contact" />
       <p>
         <label>Name: <input type="text" name="name" required /></label>
       </p>
