@@ -1,13 +1,7 @@
-#container {
- @include flex-display(column, center, start);
- width: 70%;
-}
-.block {
-  margin: 2rem 1rem;
-  background-color: rgb(0, 0, 90);
-  border-radius: 25px;
-  padding: 1.5rem;
-  box-shadow: 10px 5px 1rem black;
+.container {
+  @extend %block;
+  @include flex-display(column, start, start);
+  padding: 2rem 4rem;
 }
 #issues {
   text-align: right;
@@ -17,10 +11,9 @@
   width: 80%;
 }
 .panel-register {
-  // @include test-border(red);
   @include flex-display(column, start, center);
   width: 50%;
-  margin: 1rem;
+  margin: 1rem 0 0 0;
 }
 #img-register {
   width: 200px;
@@ -43,4 +36,7 @@
 #list-press {
   list-style: circle;
   font-size: 1rem;
+}
+#contact {
+  box-shadow: none;
 }

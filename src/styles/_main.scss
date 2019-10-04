@@ -1,14 +1,16 @@
 ::-webkit-scrollbar {
   display: none;
+  overflow-x: hidden;
 }
 body {
   @include font-styles($font-color, $font-size);
   font-family: $font-family;
-  padding: 2rem;
+  padding: 2rem 0;
   background: $primary;
 }
 main {
   @include flex-display(column, center, center);
+  width: 100%;
 }
 a, h3 {
   font-weight: bold;
@@ -57,6 +59,9 @@ li {
 hr {
   width: 80%;
 }
+#bottom-hr {
+  width: 50%;
+}
 strong {
   color: white;
   font-size: .8rem;
@@ -72,15 +77,9 @@ span {
 #index {
   @include flex-display(column, start, center);
 }
-// #quote {
-//   @include flex-display(row, center, center);
-//   margin: 5rem 1rem;
-//   font-style: italic;
-//   text-align: right;
-// }
 footer {
   font-size: .5rem;
-  padding-top: 1rem;
+  padding: 1rem 0 0 1rem;
   color: $tertiary;
   font-style: italic;
 }

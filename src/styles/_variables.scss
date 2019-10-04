@@ -25,6 +25,12 @@ $font-size: 16px;
   border: 1px solid $color;
 }
 
+%block {
+  background: $secondary;
+  margin: 2rem 0;
+  box-shadow: 5px 5px .75rem black;
+}
+
 // %input-label {
 //   @include font-styles(black, $font-size);
 //   font-weight: bold;

@@ -2,8 +2,8 @@ import React from 'react'
 
 import SEO from '../components/seo'
 import Layout from '../components/layout'
-import Container from '../components/container'
 import VotingInfo from '../components/voting-info'
+import AboutMe from '../components/about-me'
 import PressReleases from '../components/press-releases'
 import Contact from '../components/contact'
 
@@ -14,16 +14,10 @@ const IndexPage = () => (
     <Layout>
       <SEO title="Home" />
       <VotingInfo />
-      <hr />
-      <Container />
-      <hr />
+      <AboutMe />
       <PressReleases />
+      <hr id="bottom-hr"/>
       <Contact />
-      {/* <div id="quote">
-      <h1>
-        "Lorem ipsum dolor sit amet" - quote
-      </h1>
-      </div> */}
     </Layout>
   </div>
 )

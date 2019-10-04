@@ -1,12 +1,8 @@
 header {
+  @extend %block;
   @include flex-display(column, start, center);
-  padding: 1rem;
   text-align: center;
-  background-color: $secondary;
-  border-radius: 25px;
-  width: 80%;
-  margin: 2rem;
-  box-shadow: 10px 5px 1rem black;
+  padding: 1rem 3rem;
 }
 #sub-header {
   @include flex-display(row, space-around, center);
@@ -27,6 +23,7 @@ header {
   @include flex-display(column, end, end);
   width: 45%;
   margin-left: 60%;
+  padding-right: 1rem;
 }
 #social-links {
   @include flex-display(row, space-around, center);
