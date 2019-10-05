@@ -1,4 +1,7 @@
 @media all and (max-width: 650px) {
+  body {
+    overflow-x: hidden!important;
+  }
   h3 {
     text-align: center;
   }
@@ -27,9 +30,6 @@
   #about-me {
     text-align: center;
     padding: 2rem 1.5rem;
-    p {
-      font-size: .75rem;
-    }
   }
   #press-releases {
     margin: 0 2rem 1rem 2rem;
