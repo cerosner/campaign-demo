@@ -1,42 +1,30 @@
-.container {
-  @extend %block;
-  @include flex-display(column, start, start);
-  padding: 2rem 4rem;
+#voting-info {
+  @include flex-display(row, space-between, start);
+  margin: 0 3rem 0 3rem;
 }
-#issues {
-  text-align: right;
-}
-#register {
-  @include flex-display(row, space-around, start);
-  width: 80%;
-}
-.panel-register {
+.voting-info-panel {
   @include flex-display(column, start, center);
+  margin: .5rem .5rem 0 .5rem;
   width: 50%;
-  margin: 1rem 0 0 0;
 }
-#img-register {
+#voting-info-img {
   width: 200px;
   transform: rotate(-20deg);
 }
-#list-register {
-  @include flex-display(column, start, start);
-  color: white;
-  list-style: circle;
+#about-me {
+  @extend %block;
+  padding: 2rem 6rem 2rem 6rem;
 }
-#sub-li {
-  margin-left: 1rem;
-  font-size: .65rem;
-  font-style: italic;
-}
-#press {
+#press-releases {
+  align-self: flex-start;
+  margin: 0 6rem 1rem 6rem;
   width: 80%;
-  margin: 1rem;
-}
-#list-press {
-  list-style: circle;
-  font-size: 1rem;
 }
 #contact {
-  box-shadow: none;
+  @extend %block;
+  margin-top: 2.5rem;
+  border-bottom: none;
+}
+#form h6 {
+  margin-bottom: 1rem;
 }

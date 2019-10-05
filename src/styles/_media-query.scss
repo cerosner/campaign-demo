@@ -1,36 +1,37 @@
-@media all and (max-width: 650px)  {
-  h1 {
-    font-size: 2.5rem;
-  }
-  h2 {
-    font-size: 1.75rem;
-  }
-  footer {
-    padding: 1rem;
+@media all and (max-width: 650px) {
+  h3 {
+    text-align: center;
   }
   #sub-header {
-    flex-direction: column;
-    padding: 1rem;
+    @include flex-display(column, center, center);
     p {
-       padding: 0;
-       width: 100%;
-     }
-  }
-  #img-header {
-    margin-bottom: 1.5rem;
+      padding: 2rem 0;
+      width: 100%;
+    }
   }
   #social-media {
-    width: 100%;
-    margin-left: 0;
+    align-self: center;
+    width: 80%;
   }
-  #register {
+  #voting-info {
     @include flex-display(column, center, center);
+    margin: 0
+  }
+  .voting-info-panel {
+    margin: 0;
     width: 90%;
   }
-  .panel-register {
-    width: 90%;
+  #voting-info-img {
+    margin-bottom: 2rem;
   }
-  .container {
-    padding: 2rem;
+  #about-me {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    p {
+      font-size: .75rem;
+    }
+  }
+  #press-releases {
+    margin: 0 2rem 1rem 2rem;
   }
 }

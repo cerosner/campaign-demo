@@ -1,4 +1,4 @@
-/**
+/*
  * SEO component that queries for data with
  *  Gatsby's useStaticQuery React hook
  *
@@ -31,7 +31,7 @@ function SEO({ description, lang, meta, title }) {
     <Helmet
       htmlAttributes={{ lang }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | Candidate for Sixth Ward City Council of Hoboken, New Jersey`}
       meta={[
         {
           name: `description`,

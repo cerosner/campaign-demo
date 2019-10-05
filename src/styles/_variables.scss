@@ -2,18 +2,14 @@
 
 $primary: rgb(0, 0, 139);
 $secondary: rgb(0, 0, 90);
-$tertiary:  rgb(128, 128, 128);
+$tertiary: rgb(92, 190, 255);
 $font-color: rgb(198, 198, 198);
-$font-family:  'Cabin', sans-serif;
-$font-size: 16px;
+$font-family: "Cabin", sans-serif;
+$font-size: 18px;
 
 @mixin font-styles($color, $size) {
   color: $color;
   font-size: $size;
-}
-@mixin dimensions($h, $w) {
-  height: $h;
-  width: $w;
 }
 @mixin flex-display($direction, $justify, $align) {
   display: flex;
@@ -25,19 +21,15 @@ $font-size: 16px;
   border: 1px solid $color;
 }
 
+%title {
+  color: $tertiary;
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 %block {
   background: $secondary;
-  margin: 2rem 0;
-  box-shadow: 5px 5px .75rem black;
+  margin: 2rem 0 3rem 0;
+  padding: 2rem;
+  border-bottom: 5px ridge black;
 }
-
-// %input-label {
-//   @include font-styles(black, $font-size);
-//   font-weight: bold;
-//   background: $primary;
-//   letter-spacing: .15rem;
-//   padding: .15rem;
-//   position: absolute;
-//   z-index: 5;
-//   visibility: hidden;
-// }

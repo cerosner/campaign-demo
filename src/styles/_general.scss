@@ -1,0 +1,71 @@
+body {
+  @include font-styles($font-color, $font-size);
+  font-family: $font-family;
+  background: $primary;
+}
+h1 {
+  @extend %title;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+h2 {
+  @extend %title;
+  font-size: 2rem;
+  text-align: center;
+}
+h3 {
+  @extend %title;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+h5, h6 {
+  font-size: .75rem;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+a {
+  color: white;
+  font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+hr {
+  width: 80%;
+}
+ul {
+  list-style: circle;
+  padding: 0 1rem 1rem 1rem;
+}
+li {
+  line-height: 1.5rem;
+}
+.sub-li {
+  font-size: .65rem;
+  font-style: italic;
+  margin-left: 1rem;
+}
+em {
+  color: rgb(254, 60, 60);
+  font-weight: bold;
+  padding: .15rem;
+}
+strong {
+  @include font-styles(white, .8rem);
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+footer {
+  color: $tertiary;
+  font-style: italic;
+  align-self: flex-start;
+  padding: 1rem;
+}
+#index {
+  @include flex-display(column, center, center);
+}
