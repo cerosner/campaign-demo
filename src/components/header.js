@@ -5,7 +5,7 @@ import facebook from '../images/facebook-logo.png'
 import twitter from '../images/twitter-logo.png'
 import instagram from '../images/instagram-logo.png'
 
-const Header = () => (
+export default () => (
   <header>
     <h1>Frank Rosner</h1>
     <h2>Candidate for Sixth Ward City Council</h2>
@@ -47,5 +47,3 @@ const Socials = () => (
     </div>
   </div>
 )
-
-export default Header

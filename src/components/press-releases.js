@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PressReleases = () => (
+export default () => (
   <div id="press-releases">
     <h3>Press Releases</h3>
     <ul id="press-releases-list">
@@ -11,5 +11,3 @@ const PressReleases = () => (
     </ul>
   </div>
 )
-
-export default PressReleases

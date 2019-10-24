@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Footer = () => (
+export default () => (
   <footer>
     <h6>
       &copy; {new Date().getFullYear()} cerosner
@@ -9,5 +9,3 @@ const Footer = () => (
     </h6>
   </footer>
 )
-
-export default Footer

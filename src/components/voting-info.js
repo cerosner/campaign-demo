@@ -2,7 +2,7 @@ import React from 'react'
 
 import sticker from '../images/ivoted-sticker.png'
 
-const VotingInfo = () => (
+export default () => (
   <div id="voting-info">
     <div className="voting-info-panel">
       <h3>Are you Registered to Vote?</h3>
@@ -30,5 +30,3 @@ const VotingInfo = () => (
     </div>
   </div>
 )
-
-export default VotingInfo
