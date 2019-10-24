@@ -1,3 +1,7 @@
+#video {
+  margin-top: 2rem;
+}
+
 #voting-info {
   @include flex-display(row, space-between, start);
   margin: 0 3rem 0 3rem;

@@ -16,6 +16,9 @@
     align-self: center;
     width: 80%;
   }
+  iframe {
+    width: 375px;
+  }
   #voting-info {
     @include flex-display(column, center, center);
     margin: 0
